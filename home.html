@@ -1,0 +1,141 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, resolution=device-resolution">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">   
+        <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <script src="scripts.js"></script>
+        <script type="text/javascript" src="getsavewatchlist.js"></script>
+        <script type="text/javascript" src="playcustomvid.js"></script>
+        <title>Bowflix Home</title>
+    </head>
+
+    <body>
+        <div class="page-identifier">Home</div>
+
+        <div class="bottom">
+            <div class="navbar">
+                <div class="navbar-iconcontainer">
+                    <div class="profilebutton"><a href ="profiles.html"><i class="fa-regular fa-user"></i></a></div>
+                    <div class="homebutton"><a href ="home.html"><i class="fa-solid fa-house"></i></a></div>
+                    <div class="watchlistbutton"><a href ="watchlist.html"><i class="fa-regular fa-clock"></i></a></div>
+                    <div class="searchbutton"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="helpbutton"><a href ="help.html"><i class="fa-regular fa-circle-question"></i></a></div>
+                    <div class="settingsbutton"><a href ="settings.html"><i class="fa-solid fa-bars"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="top">
+            <div class="logocontainer">
+                <div class="logo">BOWFLIX</div>
+            </div>
+        </div>
+        <div class="maincontent">  
+            <div class="return-button-container">
+                <div class="return-icon">
+                    <button class="return-id-button" onclick="history.back()"><i class="fa-solid fa-angle-up fa-rotate-270"></i> Return</button>
+                </div>
+            </div>     
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Reccomended</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="starwars.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="spree.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="shek.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="spiderman.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="mrclean.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                </div>
+                <h1 class="movie-list-title">Recent</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="legend.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="justgowithit.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="jaws.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="goonies.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="captianmarvel.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                </div>
+                <h1 class="movie-list-title">Hot Now</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="blackwidoe.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="1917.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="wednesday.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="shek.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="spiderman.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                </div>
+                <h1 class="movie-list-title">Horror</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="legend.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="justgowithit.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="jaws.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="goonies.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                    <div class="movie-list-item" onclick="toggleMovieSelection(this)">
+                        <img class="movie-thumbnail" src="captianmarvel.png">
+                        <button class="add-to-watchlist-btn" onclick="addMovieToList(event, this.previousElementSibling.src, this); event.stopPropagation();"><i class="fa-regular fa-clock"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
