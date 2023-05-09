@@ -67,5 +67,3 @@ document.getElementById('account-form').addEventListener('submit', (e) => {
 });
 
 
-
-

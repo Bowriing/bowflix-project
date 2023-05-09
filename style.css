@@ -30,7 +30,7 @@ body{
     position: fixed;
     right: 0;
     top: 0;
-    font-size: 75px;
+    font-size: 300%;
     color: white;
     opacity: 40%;
     margin-right: 15px;    
@@ -96,7 +96,7 @@ body{
     background-color: rgba(0, 0, 0, 0.404);
     border-radius: 10px;
     padding: 10px;
-    width: 400px;
+    width: 550px;
 }
 
 .navbar-iconcontainer{
@@ -275,16 +275,36 @@ body{
     background-color: darkblue;
     border-radius: 3px;
     height: 55px;
-    width: 55px;
-    font-size: 40px;
-    flex: 1;
+    width: 200px;
+    font-size: 25px;
     margin-left: 10px;
-    align-items: center;
-    justify-content: center;
+}
+
+.searchbutton input{
+    background-color: transparent;
+    width: 80%;
+    color: white;
+}
+
+.searchbutton input:focus{
+    border: none;
+    outline: none;
+}
+
+.searchbutton input:hover{
+    cursor: pointer;
 }
 
 .searchbutton:hover{
     outline: white solid 3px;
+}
+
+.searchbutton input::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ffffff' d='M4 2.344L1.344 0 0 1.344 2.656 4 0 6.656 1.344 8 4 5.344 6.656 8 8 6.656 5.344 4 8 1.344 6.656 0 4 2.344z'/%3E%3C/svg%3E");
+    cursor: pointer;
 }
 
 .helpbutton{
@@ -414,14 +434,20 @@ body{
 }
 
 .helpitem{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.459);
     height: 180px;
     width: 500px;
     display: flex;
+    border-radius: 15px;
 }
 
-.helptext{
-    color: white;
+.help-item-icon{
+    padding: 25px;
+    font-size: 50;
+}
+
+.help-item-text{
+    padding: 10px;
 }
 
 .add-to-watchlist-btn {
